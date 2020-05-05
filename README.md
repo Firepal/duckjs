@@ -1,4 +1,4 @@
-# duckjs
+# DuckJS
 The first-ever duck delivery Javascript library.
 
 Designed to be performant, fast and bug-free, DuckJS will deliver a quacker. Literally.
