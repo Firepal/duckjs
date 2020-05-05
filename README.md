@@ -7,6 +7,9 @@ Designed to be performant, fast and bug-free, DuckJS will deliver a quacker. Lit
 
 ## Usage
 Add the script to your webpage and create a `div`, `pre` or `span` element with the "duckjs" id.
+
+The text in that element *will be the duck-delivery button's text.*
+
 ```html
 <!DOCTYPE html>
 <html>
