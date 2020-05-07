@@ -64,14 +64,20 @@ window.onload = function() {
 	
 	// get div from DOM
 	let duckdiv = document.getElementById('duckjs');
-	var ducktext = duckdiv.textContent;
-	duckdiv.textContent = "";
+	var ducktext = duckdiv.innerHTML;
+	duckdiv.innerHTML = "";
 
 	cssAddClass('.duckbutton { display:block; position:fixed; bottom:10px; right:10px; background-color: yellow; padding:10px; border-radius: 25px; border:none; }');
 
 	let duckbutton = document.createElement('button');
 	duckbutton.className = "duckbutton";
-	duckbutton.textContent = ducktext;
+
+	if (ducktext == "") {
+	duckbutton.innerHTML = "click me<br>for duck"
+	} else {
+	duckbutton.innerHTML = ducktext;
+	}
+	
 	duckbutton.onclick = function(){	
 		if(!backwards || !forwards){
 		duckAnim();
