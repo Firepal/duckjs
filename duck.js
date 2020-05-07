@@ -5,14 +5,16 @@ var imgduck = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAALCAYAAACksgd
 var imgduckopen = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAALCAYAAACksgdhAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAWUlEQVQoz5WRwQ3AIAwDz0zRkRmVLdxPI1VpoHAvBDrLFuLFZRznIcQEVcKOCIA7dseP7CokaCGkmiURpNlDrhf3Q2i5qWIIte3RedMuEXwkff7pb9tJ/ZIbxb4jzL1bE3wAAAAASUVORK5CYII=";
 
 function cssAddClass( foo ) {
-
+	// check if style element exists, if not, create one
 	if( document.getElementsByTagName('style')[0] ) {
 
 	document.getElementsByTagName('style')[0].innerHTML += "\n" + foo;
 
 	} else {
 
-	var style = document.createElement('style').innerHTML = foo;
+	var style = document.createElement('style');
+	style.innerHTML = foo;
+
 	var head = document.getElementsByTagName('head')[0];
 	head.appendChild(style);
 
