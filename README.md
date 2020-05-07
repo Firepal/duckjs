@@ -14,7 +14,7 @@ The text in that element *will be the duck-delivery button's text.*
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="https://cdn.jsdelivr.net/gh/Firepal/duckjs/duck.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/Firepal/duckjs@master/duck.js"></script>
 	</head>
 	<body>
 		<div id="duckjs">
