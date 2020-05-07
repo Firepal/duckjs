@@ -13,7 +13,8 @@ function cssAddClass( foo ) {
 	} else {
 
 	var style = document.createElement('style').innerHTML = foo;
-	document.getElementsByTagName('head')[0].appendChild(style);
+	var head = document.getElementsByTagName('head')[0];
+	head.appendChild(style);
 
 	}
 
