@@ -23,6 +23,7 @@ function cssAddClass( foo ) {
 }
 
 function duckAnim () {
+	// should be user-adjustable
 	let addedright = -130;
 
 		forwards = setInterval(function () {
