@@ -5,7 +5,7 @@ var imgduck = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAALCAYAAACksgd
 var imgduckopen = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAALCAYAAACksgdhAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAWUlEQVQoz5WRwQ3AIAwDz0zRkRmVLdxPI1VpoHAvBDrLFuLFZRznIcQEVcKOCIA7dseP7CokaCGkmiURpNlDrhf3Q2i5qWIIte3RedMuEXwkff7pb9tJ/ZIbxb4jzL1bE3wAAAAASUVORK5CYII=";
 
 function cssAddClass( foo ) {
-	// check if style element exists, if not, create one
+	// Check if style element exists. If not, create one.
 	if( document.getElementsByTagName('style')[0] ) {
 
 	document.getElementsByTagName('style')[0].innerHTML += "\n" + foo;
@@ -23,7 +23,7 @@ function cssAddClass( foo ) {
 }
 
 function duckAnim () {
-	// should be user-adjustable
+	// TODO: Should be user-adjustable.
 	let addedright = -130;
 
 		forwards = setInterval(function () {
@@ -63,7 +63,7 @@ var ducksound = new Audio(oggduck);
 window.onload = function() {
 	duck.className = "duck";
 	
-	// get div from DOM
+	// Get div from DOM.
 	let duckdiv = document.getElementById('duckjs');
 	var ducktext = duckdiv.innerHTML;
 	duckdiv.innerHTML = "";
