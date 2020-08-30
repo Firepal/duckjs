@@ -65,6 +65,8 @@ window.onload = function() {
 	
 	// Get div from DOM.
 	let duckdiv = document.getElementById('duckjs');
+
+	// TODO: Use a custom attribute for setting the button text instead of the element's body.
 	var ducktext = duckdiv.innerHTML;
 	duckdiv.innerHTML = "";
 
