@@ -88,5 +88,5 @@ window.onload = function() {
 
 	duckdiv.appendChild(duckbutton); duckdiv.appendChild(duck);
 	
-	cssAddClass('.duck { image-rendering:pixelated; width:130px; display:block; right:-130px; position:fixed; overflow:none; bottom:' + String(parseInt(duckbutton.clientHeight) + 20) + 'px }');
+	cssAddClass('.duck { image-rendering:pixelated; image-rendering: crisp-edges; width:130px; display:block; right:-130px; position:fixed; overflow:none; bottom:' + String(parseInt(duckbutton.clientHeight) + 20) + 'px }');
 }
